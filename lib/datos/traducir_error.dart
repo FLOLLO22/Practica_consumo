@@ -25,5 +25,8 @@ FallaRed traducirError(DioException e) {
     case DioExceptionType.cancel:
     case DioExceptionType.connectionError:
       return const SinConexion();
+    case DioExceptionType.transformTimeout:
+      // TODO: Handle this case.
+      throw UnimplementedError();
   }
 }
